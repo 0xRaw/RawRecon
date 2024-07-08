@@ -137,7 +137,7 @@ if not alive_ips:
     sys.exit(1)
 
 print("[-] Running Port Scanning with Masscan...")
-os.system(f"masscan -iL alive_for_masscan.txt --rate 1000 -oX masscan.xml")
+os.system(f"masscan -iL alive_for_masscan.txt --rate 1000 -oX masscan.xml") # SPECIFY THE PORT IS NEEDED
 print("[+] Masscan results saved in masscan.xml")
 os.system(f"cat masscan.xml")
 
